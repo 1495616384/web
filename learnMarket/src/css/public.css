@@ -48,6 +48,9 @@ button, input, select, textarea {
 ul li, ol li {
     list-style: none;
 }
+a{
+    color: black;
+}
 
 .left{
     float: left!important;
@@ -157,12 +160,12 @@ a.bt-register:active {
     height: 60px;
 }
 .nav-header-info a{
-
+    margin-left: 5px
 }
 .topmess-count {
     position: absolute;
     height: 16px;
-    right: 185px;
+    right: 195px;
     top: 10px;
     line-height: 14px;
     background: #ea5947;
@@ -204,8 +207,17 @@ a.bt-register:active {
 }
 #user_mode>ul>li>a{
     display: inline-block;
+    text-decoration:none;
     cursor: pointer;
     height: 30px;
     width: 90px;
     background-color: rgba(195, 188, 188, 0.55);
+}
+
+@media only screen and (min-width:1200px){
+
+}
+
+@media only screen and (min-width:970px){
+
 }

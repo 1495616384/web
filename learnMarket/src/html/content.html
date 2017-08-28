@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侧边栏</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/market.css">
+</head>
+<body>
+<div id="page-head">
+    <div id="header-content">
+        <a class="page-logo-index">
+            <i class="logo-icon"></i>
+        </a>
+        <ul class="nav-header page-nav-header">
+            <li><a>首页</a></li>
+            <li><a>学校概况</a></li>
+            <li><a>课程超市</a></li>
+        </ul>
+        <div id="user_div" class="right">
+            <!--未登录-->
+ <!--           <ul class="nav-header page-nav-header left">
+                <li><a style="color: #333333!important;">联系我们</a></li>
+                <li><a style="color: #333333!important;">登录</a></li>
+            </ul>
+            <a class="bt-register">报名/注册</a>-->
+
+            <!--教师登录-->
+             <ul class="nav-header-info">
+                 <li>
+                     <a class="left">
+                         <span class="topmess-count">1</span>
+                         <i style="font-size: 35px;" class="iconfont icon-remind"></i>
+                     </a>
+                 </li>
+                 <li>
+                     <!--头像-->
+                     <a class="header-avator" style="width: 45px;height: 45px;">
+                         <img style="width: 100%;" src="http://www.ulearning.cn:80//umooc//static/images/boy_stu.png">
+                     </a>
+                 </li>
+                 <li>
+                     <!--姓名-->
+                     <a id="user_name">
+                         <span style="width:20px;font-size: 14px;color: #727272;">张新海</span>
+                         <i class="iconfont icon-unfold"></i>
+                     </a>
+                 </li>
+             </ul>
+            <!--二级菜单-->
+            <div class="hide" id="user_info">
+                <div>
+                    <!--头像-->
+                    <a class="header-avator" style="width: 70px;height: 70px;">
+                        <img style="width: 100%;" src="http://www.ulearning.cn:80//umooc//static/images/boy_stu.png">
+                    </a>
+                    <ul id="base_info">
+                        <li><strong>张新海</strong></li>
+                        <li><span style="opacity: 0.5;">工商管理</span></li>
+                    </ul>
+                </div>
+                <div id="user_mode">
+                    <!--模块-->
+                    <ul>
+                        <li>
+                            <a>我学的课</a>
+                            <a>学习档案</a>
+                        </li>
+                        <li>
+                            <a>三个字</a>
+                            <a>两个</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="height: auto;text-align: right;">
+                    <!--用户退出-->
+                    <button>安全退出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容布局-->
+<div id="page-body">
+    <!--左侧目录-->
+    <div id="body-left">
+        <ul>
+            <li>
+                <div class="folder" style="border-top: 1px solid #ccc;">课程库</div>
+                <ul>
+                    <li><a href="#">管理学</a></li>
+                    <li><a href="#">法学</a></li>
+                    <li><a href="#">计算机科学</a></li>
+                    <li><a href="#">文学</a></li>
+                    <li><a href="#">教育学</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="folder">专业路径</div>
+            </li>
+            <li>
+                <div class="folder">系列课程</div>
+            </li>
+            <li>
+                <div class="folder">课程标签</div>
+            </li>
+        </ul>
+    </div>
+    <!--右侧课程-->
+    <div id="body-right">
+        <!--搜索-->
+        <div id="serch-div">
+            <form>
+                <select>
+                    <option>最新</option>
+                    <option>最热门</option>
+                </select>
+                <select>
+                    <option>学历</option>
+                    <option>专科</option>
+                    <option>本科</option>
+                </select>
+                <input class="searchbutton right" type="button" value="Go">
+                <input class="searchfield right" type="text" value="Search..." style="margin-right: 10px;" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}">
+            </form>
+        </div>
+        <!--内容-->
+        <div id="body-content">
+            <div class="content-iteam">
+                <ul>
+                    <!--课程截图-->
+                    <li class="iteams-img">
+                        <img src="">
+                    </li>
+                    <!--课程名称和学分-->
+                    <li>
+                        <h3>XX基础</h3>
+                        <span ><strong>2</strong>学分</span>
+                    </li>
+                    <!--教师和学习人数-->
+                    <li>
+                        <span>张三</span>
+                        <span><strong>10086</strong>人在学</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-iteam">
+                <ul>
+                    <!--课程截图-->
+                    <li class="iteams-img">
+                        <img src="">
+                    </li>
+                    <!--课程名称和学分-->
+                    <li>
+                        <h3>XX基础</h3>
+                        <span ><strong>2</strong>学分</span>
+                    </li>
+                    <!--教师和学习人数-->
+                    <li>
+                        <span>张三</span>
+                        <span><strong>10086</strong>人在学</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-iteam">
+                <ul>
+                    <!--课程截图-->
+                    <li class="iteams-img">
+                        <img src="">
+                    </li>
+                    <!--课程名称和学分-->
+                    <li>
+                        <h3>XX基础</h3>
+                        <span ><strong>2</strong>学分</span>
+                    </li>
+                    <!--教师和学习人数-->
+                    <li>
+                        <span>张三</span>
+                        <span><strong>10086</strong>人在学</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-iteam">
+                <ul>
+                    <!--课程截图-->
+                    <li class="iteams-img">
+                        <img src="">
+                    </li>
+                    <!--课程名称和学分-->
+                    <li>
+                        <h3>XX基础</h3>
+                        <span ><strong>2</strong>学分</span>
+                    </li>
+                    <!--教师和学习人数-->
+                    <li>
+                        <span>张三</span>
+                        <span><strong>10086</strong>人在学</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-iteam">
+                <ul>
+                    <!--课程截图-->
+                    <li class="iteams-img">
+                        <img src="">
+                    </li>
+                    <!--课程名称和学分-->
+                    <li>
+                        <h3>XX基础</h3>
+                        <span ><strong>2</strong>学分</span>
+                    </li>
+                    <!--教师和学习人数-->
+                    <li>
+                        <span>张三</span>
+                        <span><strong>10086</strong>人在学</span>
+                    </li>
+                </ul>
+            </div>
+            <!--暂时解决flex布局bug方案,在flex下不正常的部分添加占位-->
+            <div class="content-iteam hide">
+                <ul>
+                    <!--课程截图-->
+                    <li class="iteams-img">
+                        <img src="">
+                    </li>
+                    <!--课程名称和学分-->
+                    <li>
+                        <h3>XX基础</h3>
+                        <span ><strong>2</strong>学分</span>
+                    </li>
+                    <!--教师和学习人数-->
+                    <li>
+                        <span>张三</span>
+                        <span><strong>10086</strong>人在学</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--右侧分页-->
+    </div>
+</div>
+</body>
+</html>
