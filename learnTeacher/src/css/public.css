@@ -1,0 +1,266 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    margin:0;
+    padding:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    border:0;
+}
+textarea{
+    margin:0;
+    padding:0;
+    outline: none;
+}
+input{
+    margin: 0;padding:0;outline: none;
+}
+/** 设置默认字体 **/
+body,
+button, input, select, textarea {
+    font: 14px '微软雅黑';
+}
+ul li, ol li {
+    list-style: none;
+}
+a{
+    color: black;
+}
+
+.left{
+    float: left!important;
+}
+.right{
+    float: right!important;
+}
+.hide{
+    visibility: hidden;
+}
+span.out{
+    top:0px;
+}
+span.over{
+    top:-40px;
+}
+
+#page-head{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 5px 0px;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100%;
+}
+
+#header-content{
+    margin: 0 auto;
+    padding:0 70px 0 100px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.page-logo-index{
+    width: 100px;
+    height: 50px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 20px;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.nav-header{
+    width:980px;
+    margin-left:-490px;
+    list-style:none;
+    position:relative;
+}
+.nav-header li{
+    float: left;
+    margin-left: 16px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+}
+.nav-header li span {
+    display:inline-block;
+    overflow:hidden
+}
+.nav-header li a {
+    float: left;
+    padding: 0 20px;
+    color: #727272;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+}
+/*鼠标经过时样式*/
+.nav-header li a.over {
+    background-color:#666;
+    color:#FFF
+}
+.nav-header li.active{
+    border-bottom: 1px solid #ccc;
+}
+a.bt-register{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: #ea5947;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 1em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+a.bt-register:hover{
+    background-color: #ee7a6c;
+    border-color: #ee7a6c;
+    text-decoration: none;
+}
+a.bt-register:active {
+    position: relative;
+    top: 1px;
+}
+
+.header-avator{
+    display: block;
+    border-radius: 40px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    line-height: 45px;
+    background: antiquewhite;
+    top: 5px;
+    margin-right: 5px;
+}
+
+#user_div{
+    height: 60px;
+}
+#user_name{
+    display: inline-block;
+    width: 64px;
+    overflow: hidden;
+}
+.nav-header-info li{
+    float: left;
+    height: 60px;
+}
+.nav-header-info a{
+    margin-left: 5px
+}
+.topmess-count {
+    position: absolute;
+    height: 16px;
+    right: 216px;
+    top: 10px;
+    line-height: 14px;
+    background: #ea5947;
+    color: #fff;
+    font-style: normal;
+    font-size: 10px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 0 4px;
+}
+
+#user_info{
+    position: absolute;
+    top: 55px;
+    right: 74px;
+    line-height: 32px;
+    padding: 0 10px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #fff;
+    /*color: #fff;*/
+    z-index: 10;
+    white-space: nowrap;
+    width: 200px;
+    min-height: 150px;
+    border:1px solid gainsboro;
+}
+#user_info>div{
+    margin: 20px 0;
+    height: 70px;
+}
+#base_info>li{
+    text-align: left;
+}
+#user_mode>ul>li{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+#user_mode>ul>li>a{
+    display: inline-block;
+    text-decoration:none;
+    cursor: pointer;
+    height: 30px;
+    width: 90px;
+    background-color: rgba(195, 188, 188, 0.55);
+}
+
+@media only screen and (max-width:1200px){
+
+}
+
+@media only screen and (max-width:930px){
+    .nav-header li a{
+        padding: 0 10px;
+    }
+    .menu-toggler{
+        visibility: visible;
+    }
+    .menu-toggler i{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:810px){
+
+
+}

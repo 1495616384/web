@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的课程(教师)</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation/waiting.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation/shake.css">
+</head>
+<body>
+<div id="page-head">
+    <div id="header-content">
+        <a class="page-logo-index">
+            <i class="logo-icon"></i>
+        </a>
+        <ul class="nav-header page-nav-header">
+            <li><a>首页</a></li>
+            <li><a>我的课程</a></li>
+            <li class="active"><a>课程超市</a></li>
+        </ul>
+        <div id="user_div" class="right">
+            <!--未登录-->
+            <!--           <ul class="nav-header page-nav-header left">
+                           <li><a style="color: #333333!important;">联系我们</a></li>
+                           <li><a style="color: #333333!important;">登录</a></li>
+                       </ul>
+                       <a class="bt-register">报名/注册</a>-->
+
+            <!--教师登录-->
+            <ul class="nav-header-info">
+                <!--消息-->
+                <li>
+                    <a class="left">
+                        <span class="topmess-count">1</span>
+                        <i style="font-size: 35px;" class="iconfont icon-remind shake shake-hard"></i>
+                    </a>
+                </li>
+                <!--头像-->
+                <li>
+                    <a class="header-avator" style="width: 45px;height: 45px;">
+                        <img style="width: 100%;" src="http://www.ulearning.cn:80//umooc//static/images/boy_stu.png">
+                    </a>
+                </li>
+                <!--姓名-->
+                <li>
+                    <a id="user_name">
+                        <span style="width:20px;font-size: 14px;color: #727272;">张新海</span>
+                        <i class="iconfont icon-unfold"></i>
+                    </a>
+                </li>
+                <!--小屏幕目录图标-->
+                <li>
+                    <a class="menu-toggler responsive-toggler hide">
+                        <i class="iconfont icon-xitongcaidan"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!--二级菜单-->
+            <div class="hide" id="user_info">
+                <div>
+                    <!--头像-->
+                    <a class="header-avator" style="width: 70px;height: 70px;">
+                        <img style="width: 100%;" src="http://www.ulearning.cn:80//umooc//static/images/boy_stu.png">
+                    </a>
+                    <ul id="base_info">
+                        <li><strong>张新海</strong></li>
+                        <li><span style="opacity: 0.5;">工商管理</span></li>
+                    </ul>
+                </div>
+                <div id="user_mode">
+                    <!--模块-->
+                    <ul>
+                        <li>
+                            <a>我学的课</a>
+                            <a>学习档案</a>
+                        </li>
+                        <li>
+                            <a>三个字</a>
+                            <a>两个</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="height: auto;text-align: right;">
+                    <!--用户退出-->
+                    <button>安全退出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+    <script src="../js/library/jquery/jquery-1.10.2.min.js"></script>
+    <script src="../js/common/dynamicNav.js"></script>
+    <script src="../js/head.js"></script>
+</html>
