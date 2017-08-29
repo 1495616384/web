@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html{overflow-y:scroll;}
 #page-body{
-    margin: 20px 15% 0 15%;
+    margin: 20px 10% 0 10%;
     display: flex;
 }
 
@@ -69,7 +69,7 @@ html{overflow-y:scroll;}
     margin: 8px;
 }
 #serch-div>form>select{
-    width: 113px;
+    width: 99px;
 }
 
 #body-content{
