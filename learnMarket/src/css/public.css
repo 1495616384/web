@@ -61,6 +61,12 @@ a{
 .hide{
     visibility: hidden;
 }
+span.out{
+    top:0px;
+}
+span.over{
+    top:-40px;
+}
 
 #page-head{
     position: relative;
@@ -90,21 +96,43 @@ a{
 }
 
 .nav-header{
+    width:980px;
+    margin-left:-490px;
+    list-style:none;
+    position:relative;
 }
 .nav-header li{
     float: left;
     margin-left: 16px;
     font-weight: 600;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
 }
-.nav-header a {
-    display: block;
+.nav-header li span {
+    display:inline-block;
+    overflow:hidden
+}
+.nav-header li a {
     float: left;
     padding: 0 20px;
     color: #727272;
     position: relative;
     cursor: pointer;
     font-size: 16px;
-    _float: left;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+}
+/*鼠标经过时样式*/
+.nav-header li a.over {
+    background-color:#666;
+    color:#FFF
 }
 
 a.bt-register{
@@ -214,10 +242,20 @@ a.bt-register:active {
     background-color: rgba(195, 188, 188, 0.55);
 }
 
-@media only screen and (min-width:1200px){
+@media only screen and (max-width:1200px){
 
 }
 
-@media only screen and (min-width:970px){
+@media only screen and (max-width:930px){
 
+}
+
+@media only screen and (max-width:810px){
+    #serch-div,#body-left{
+        display: none;
+    }
+    .menu-toggler i{
+        font-size: 18px;
+        color: chocolate;
+    }
 }
