@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Timer*/
 .timer{
     width: 24px;
@@ -310,7 +311,7 @@
     100%{transform: scale(1.5);}
 }
 
-/*help 大头网 www.datouwang.com */
+/*help å¤§å¤´ç½‘ www.datouwang.com */
 .help{
     width: 30px;
     height: 30px;
