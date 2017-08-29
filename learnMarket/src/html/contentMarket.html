@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>侧边栏</title>
+    <title>课程超市</title>
     <link rel="stylesheet" type="text/css" href="../css/public.css">
     <link rel="stylesheet" type="text/css" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation/waiting.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation/shake.css">
     <link rel="stylesheet" type="text/css" href="../css/market.css">
 </head>
 <body>
@@ -16,7 +18,7 @@
         <ul class="nav-header page-nav-header">
             <li><a>首页</a></li>
             <li><a>我的课程</a></li>
-            <li><a>课程超市</a></li>
+            <li class="active"><a>课程超市</a></li>
         </ul>
         <div id="user_div" class="right">
             <!--未登录-->
@@ -28,26 +30,34 @@
 
             <!--教师登录-->
              <ul class="nav-header-info">
+                 <!--消息-->
                  <li>
                      <a class="left">
                          <span class="topmess-count">1</span>
-                         <i style="font-size: 35px;" class="iconfont icon-remind"></i>
+                         <i style="font-size: 35px;" class="iconfont icon-remind shake shake-hard"></i>
                      </a>
                  </li>
+                 <!--头像-->
                  <li>
-                     <!--头像-->
                      <a class="header-avator" style="width: 45px;height: 45px;">
                          <img style="width: 100%;" src="http://www.ulearning.cn:80//umooc//static/images/boy_stu.png">
                      </a>
                  </li>
+                 <!--姓名-->
                  <li>
-                     <!--姓名-->
                      <a id="user_name">
                          <span style="width:20px;font-size: 14px;color: #727272;">张新海</span>
                          <i class="iconfont icon-unfold"></i>
                      </a>
                  </li>
+                 <!--小屏幕目录图标-->
+                 <li>
+                     <a class="menu-toggler responsive-toggler hide">
+                         <i class="iconfont icon-xitongcaidan"></i>
+                     </a>
+                 </li>
              </ul>
+
             <!--二级菜单-->
             <div class="hide" id="user_info">
                 <div>
@@ -90,7 +100,7 @@
                 <div class="folder" style="border-top: 1px solid #ccc;">课程库</div>
                 <ul>
                     <li><a href="#">管理学</a></li>
-                    <li><a href="#">法学</a></li>
+                    <li class="active"><a href="#">法学</a></li>
                     <li><a href="#">计算机科学</a></li>
                     <li><a href="#">文学</a></li>
                     <li><a href="#">教育学</a></li>
@@ -131,6 +141,7 @@
                 <ul>
                     <!--课程截图-->
                     <li class="iteams-img">
+                        <div class="typing_loader"></div>
                         <img src="">
                     </li>
                     <!--课程名称和学分-->
@@ -149,6 +160,7 @@
                 <ul>
                     <!--课程截图-->
                     <li class="iteams-img">
+                        <div class="typing_loader"></div>
                         <img src="">
                     </li>
                     <!--课程名称和学分-->
@@ -167,6 +179,7 @@
                 <ul>
                     <!--课程截图-->
                     <li class="iteams-img">
+                        <div class="typing_loader"></div>
                         <img src="">
                     </li>
                     <!--课程名称和学分-->
@@ -185,6 +198,7 @@
                 <ul>
                     <!--课程截图-->
                     <li class="iteams-img">
+                        <div class="typing_loader"></div>
                         <img src="">
                     </li>
                     <!--课程名称和学分-->
@@ -203,6 +217,7 @@
                 <ul>
                     <!--课程截图-->
                     <li class="iteams-img">
+                        <div class="typing_loader"></div>
                         <img src="">
                     </li>
                     <!--课程名称和学分-->
@@ -243,5 +258,5 @@
 </body>
 <script src="../js/library/jquery/jquery-1.10.2.min.js"></script>
 <script src="../js/common/dynamicNav.js"></script>
-<script src="../js/market.js"></script>
+<script src="../js/head.js"></script>
 </html>
