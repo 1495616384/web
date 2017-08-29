@@ -109,7 +109,7 @@ included in the project:
    ```bash
    # Clone your fork of the repo into the current directory
    git clone https://github.com/<your-username>/html5-boilerplate.git
-   # Navigate to the newly cloned directory
+   # nav-headerigate to the newly cloned directory
    cd html5-boilerplate
    # Assign the original repo to a remote called "upstream"
    git remote add upstream https://github.com/h5bp/html5-boilerplate.git
