@@ -105,3 +105,16 @@ html{overflow-y:scroll;}
     margin: 0 5px;
 }
 
+@media only screen and (max-width:810px){
+    .nav-header li a{
+        padding: 0 10px;
+    }
+    #serch-div,#body-left{
+        display: none;
+    }
+    .menu-toggler i{
+        font-size: 18px;
+        color: chocolate;
+    }
+
+}

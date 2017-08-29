@@ -193,7 +193,7 @@ a.bt-register:active {
 .topmess-count {
     position: absolute;
     height: 16px;
-    right: 195px;
+    right: 216px;
     top: 10px;
     line-height: 14px;
     background: #ea5947;
@@ -247,15 +247,18 @@ a.bt-register:active {
 }
 
 @media only screen and (max-width:930px){
-
+    .nav-header li a{
+        padding: 0 10px;
+    }
+    .menu-toggler{
+        visibility: visible;
+    }
+    .menu-toggler i{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width:810px){
-    #serch-div,#body-left{
-        display: none;
-    }
-    .menu-toggler i{
-        font-size: 18px;
-        color: chocolate;
-    }
+
+
 }
