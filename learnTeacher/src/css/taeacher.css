@@ -1,0 +1,9 @@
+@charset "UTF-8";
+html {
+    overflow-y: scroll;
+}
+#page-body {
+    margin: 20px 10% 0 10%;
+    display: flex;
+    padding-top: 70px;
+}

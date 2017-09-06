@@ -3,7 +3,7 @@
 * */
 $(function () {
     $(".nav-header").dynamicNav({
-        direction:"down",
+        direction:"up",
         duration:350
     });
 });

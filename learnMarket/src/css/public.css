@@ -40,6 +40,10 @@ textarea{
 input{
     margin: 0;padding:0;outline: none;
 }
+select{
+    cursor:pointer;
+}
+
 /** 设置默认字体 **/
 body,
 button, input, select, textarea {
@@ -69,18 +73,20 @@ span.over{
 }
 
 #page-head{
-    position: relative;
+    z-index: 99999;
+    position: fixed;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 5px 0px;
-    background-color: #fff;
+    background-color:white;
     font-size: 16px;
     width: 100%;
 }
 
 #header-content{
     margin: 0 auto;
+    margin-top: 0;
     padding:0 70px 0 100px;
-    height: 60px;
-    line-height: 60px;
+    height: 59px;
+    line-height: 59px;
 }
 
 .page-logo-index{
@@ -92,7 +98,7 @@ span.over{
     margin: 5px;
     margin-left: 20px;
     overflow: hidden;
-    background-color: yellow;
+    background-color: cornflowerblue;
 }
 
 .nav-header{
@@ -128,13 +134,26 @@ span.over{
     font-weight: bold;
     height: 60px;
     line-height: 60px;
+    animation: headAn 300ms;
 }
+@keyframes headAn {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /*鼠标经过时样式*/
 .nav-header li a.over {
     background-color:#666;
     color:#FFF
 }
-
+.nav-header li.active{
+    border-bottom: 4px solid #CDD;
+}
 a.bt-register{
     display: inline-block;
     outline: none;
@@ -204,6 +223,20 @@ a.bt-register:active {
     text-align: center;
     padding: 0 4px;
 }
+.topShop-count{
+    position: absolute;
+    height: 16px;
+    right: 254px;
+    top: 10px;
+    line-height: 14px;
+    background: #ea5947;
+    color: #fff;
+    font-style: normal;
+    font-size: 10px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 0 4px;
+}
 
 #user_info{
     position: absolute;
@@ -215,7 +248,7 @@ a.bt-register:active {
     text-align: center;
     background-color: #fff;
     /*color: #fff;*/
-    z-index: 10;
+    z-index: 9999;
     white-space: nowrap;
     width: 200px;
     min-height: 150px;
