@@ -20,6 +20,11 @@
             <li class="active"><a>我的课程</a></li>
             <li><a>课程超市</a></li>
         </ul>
+        <div style="width: 10px;float: right;margin-left: 10px;">
+            <a class="menu-toggler responsive-toggler hide">
+                <i class="iconfont icon-xitongcaidan"></i>
+            </a>
+        </div>
         <div id="user_div" class="right">
             <!--未登录-->
             <!--           <ul class="nav-header page-nav-header left">
@@ -32,9 +37,12 @@
             <ul class="nav-header-info">
                 <!--消息-->
                 <li>
-                    <a class="left">
-                        <span class="topmess-count">1</span>
-                        <i style="font-size: 35px;" class="iconfont icon-remind shake shake-hard"></i>
+                    <a class="left">  /span>
+                        <i style="font-size: 35px;" c
+
+
+
+                           lass="iconfont  icon-remind shake shake-hard"></i>
                     </a>
                 </li>
                 <!--头像-->
@@ -51,11 +59,11 @@
                     </a>
                 </li>
                 <!--小屏幕目录图标-->
-                <li>
+                <!--<li>
                     <a class="menu-toggler responsive-toggler hide">
                         <i class="iconfont icon-xitongcaidan"></i>
                     </a>
-                </li>
+                </li>-->
             </ul>
 
             <!--二级菜单-->
@@ -89,11 +97,435 @@
                 </div>
             </div>
         </div>
+        <!--购物车-->
+        <div style="width: 10px;float: right;margin-right: 25px;">
+            <a class="menu-toggler responsive-toggler">
+                <span class="topShop-count">2</span>
+                <i style="font-size: 30px;" class="iconfont icon-publishgoods_fill"></i>
+            </a>
+        </div>
     </div>
 </div>
 <!--主体内容-->
 <div id="page-body">
-    <div>
+    <div style="display: flex;">
+        <!--content-->
+        <div style="width: 100%;">
+            <!--我的课程-->
+            <div style="position: relative;margin: 12px 176px 0 0">
+                <!--我教的课-->
+                <div>
+                    <!--tab-->
+                    <div style="display: flex;">
+                        <div style="display:flex;border:1px solid #ccc; font-size: 16px;">
+                            <div style='padding: 5px;width: 111px;text-align: center;background-color: cornflowerblue;color: white;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;"'>
+                                <span>我教的课</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content-->
+                    <div style="text-align: right;margin-bottom: 10px;">
+                        <p>更多</p>
+                    </div>
+                    <div>
+                        <div style="margin-bottom:20px;display: flex;justify-content: space-between;flex-wrap: wrap;">
+                            <div style="width: 200px;">
+                                <img style="background-color: cadetblue;" width="200" height="100">
+                                <p>经济法基础</p>
+                            </div>
+                            <div style="width: 200px;">
+                                <img style="background-color: cadetblue;" width="200" height="100">
+                                <p>经济法基础</p>
+                            </div>
+                            <div style="width: 200px;">
+                                <img style="background-color: cadetblue;" width="200" height="100">
+                                <p>经济法基础</p>
+                            </div>
+                        </div>
+                        <div style="margin-bottom:20px;display: flex;justify-content: space-between;flex-wrap: wrap;">
+                            <div style="width: 200px;">
+                                <img style="background-color: cadetblue;" width="200" height="100">
+                                <p>经济法基础</p>
+                            </div>
+                            <div style="width: 200px;">
+                                <img style="background-color: cadetblue;" width="200" height="100">
+                                <p>经济法基础</p>
+                            </div>
+                            <div style="width: 200px;">
+                                <img style="background-color: cadetblue;" width="200" height="100">
+                                <p>经济法基础</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--事务提醒-->
+                <div style="border: 1px solid #ccc;margin-bottom: 15px;">
+                    <!--tittle-->
+                    <div style="background-color: rgba(221, 221, 221, 0.27);border-bottom:1px solid #ccc; font-size: 15px;padding: 5px;">
+                        <h3>事务提醒</h3>
+                    </div>
+                    <!--content-->
+                    <div>
+                        <ul>
+                            <li style="display: flex;margin: 10px 0;padding: 0 30px;">
+                                <div style="width: 50%;cursor: pointer;"><span>【大学英语】<label>365</label>人 已缴费待分班</span></div>
+                                <div style="width: 50%;cursor: pointer;"><span>【高等数学】<label>365</label>人 已缴费待分班</span></div>
+                            </li>
+                            <li style="display: flex;margin: 10px 0;padding: 0 30px;">
+                                <div style="width: 50%;cursor: pointer;"><span>【工程制图】<label>365</label>人 已缴费待分班</span></div>
+                                <div style="width: 50%;cursor: pointer;"><span>【计算机基础】<label>365</label>人 已缴费待分班</span></div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--我的班级-->
+                <div style="border: 1px solid #ccc;margin-bottom: 15px;">
+                    <!--tittle-->
+                    <div style="background-color: rgba(221, 221, 221, 0.27);border-bottom:1px solid #ccc; font-size: 15px;padding: 5px;">
+                        <h3>我的班级</h3>
+                    </div>
+                    <div style="padding: 10px;display: flex;">
+                        <!--带批改作业-->
+                        <div style="width: 33.33%;text-align: center;">
+                            <div style="border-right:1px solid #ccc; ">
+                                <p style="padding: 10px;">待批改作业</p>
+                                <h1 style="font-size: 30px;">42</h1>
+                            </div>
+                        </div>
+                        <!--讨论区新回复-->
+                        <div style="width: 33.33%;text-align: center;">
+                            <div style="border-right:1px solid #ccc; ">
+                                <p style="padding: 10px;">讨论区新回复</p>
+                                <h1 style="font-size: 30px;">27</h1>
+                            </div>
+                        </div>
+                        <!--待查看新消息-->
+                        <div style="width: 33.33%;text-align: center;">
+                            <div>
+                                <p style="padding: 10px;">待查看新消息</p>
+                                <h1 style="font-size: 30px;">16</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height:55px;display:flex;border: 1px solid #ccc;margin-bottom: 15px;justify-content: space-around;flex-wrap: nowrap;align-items: center;">
+                    <div style="font-size: 22px;padding: 0 20px 0 24px;">
+                        <span>徐州01班</span>
+                    </div>
+                    <div style="color: #ccc;text-align: left;flex-grow: 2;">
+                        <p>
+                            <i class="iconfont icon-people"></i>
+                            <span>学生人数：<label>35</label></span>
+                        </p>
+                        <p>
+                            <span>计算机文化基础</span>
+                        </p>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>作业 4待批改</span>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>讨论 4</span>
+                        <i style="font-size: 18px;" class="iconfont icon-xin"></i>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>消息 4</span>
+                        <i style="font-size: 18px;" class="iconfont icon-xin"></i>
+                    </div>
+                </div>
+                <div style="height:55px;display:flex;border: 1px solid #ccc;margin-bottom: 15px;justify-content: space-around;flex-wrap: nowrap;align-items: center;">
+                    <div style="font-size: 22px;padding: 0 20px 0 24px;">
+                        <span>徐州01班</span>
+                    </div>
+                    <div style="color: #ccc;text-align: left;flex-grow: 2;">
+                        <p>
+                            <i class="iconfont icon-people"></i>
+                            <span>学生人数：<label>35</label></span>
+                        </p>
+                        <p>
+                            <span>计算机文化基础</span>
+                        </p>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>作业 4待批改</span>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>讨论 4</span>
+                        <i style="font-size: 18px;" class="iconfont icon-xin"></i>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>消息 4</span>
+                        <i style="font-size: 18px;" class="iconfont icon-xin"></i>
+                    </div>
+                </div>
+                <div style="height:55px;display:flex;border: 1px solid #ccc;margin-bottom: 15px;justify-content: space-around;flex-wrap: nowrap;align-items: center;">
+                    <div style="font-size: 22px;padding: 0 20px 0 24px;">
+                        <span>徐州01班</span>
+                    </div>
+                    <div style="color: #ccc;text-align: left;flex-grow: 2;">
+                        <p>
+                            <i class="iconfont icon-people"></i>
+                            <span>学生人数：<label>35</label></span>
+                        </p>
+                        <p>
+                            <span>计算机文化基础</span>
+                        </p>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>作业 4待批改</span>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>讨论 4</span>
+                        <i style="font-size: 18px;" class="iconfont icon-xin"></i>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <span>消息 4</span>
+                        <i style="font-size: 18px;" class="iconfont icon-xin"></i>
+                    </div>
+                </div>
+                    <!--更多-->
+                <div style="display:flex;margin-bottom: 25px;justify-content:flex-end;">
+                    <span><a>更多</a></span>
+                </div>
+                <!--课程动态-->
+                <div></div>
+            </div>
+            <!--课程列表-->
+            <div style="display: none;position: relative;margin: 12px 176px 0 0">
+                <div>
+                    <!--title-->
+                    <div style="display: flex;border-bottom:1px solid #ccc;">
+                        <div style="display:flex;border-bottom:3px solid cornflowerblue; font-size: 16px;">
+                            <div style='padding: 5px;width: 111px;text-align: center;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;"'>
+                                <span>课程</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--授课中-->
+                    <div style="display: flex;">
+                        <div style="color:#ccc;margin: 10px 0;display:flex; font-size: 16px;">
+                            <div style='padding: 5px;width: 111px;text-align: center;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;"'>
+                                <span>授课中  1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="">
+                        <!--课程列表-->
+                        <div style="margin-bottom: 20px;border-bottom:1px solid #ccc; padding: 10px;">
+                            <div style="display: flex;">
+                                <div style="width: 230px;height: 130px;background-color: cornflowerblue;">
+                                    <img src="">
+                                </div>
+                                <div style="flex-grow: 1;background-color: rgba(195, 188, 188, 0.55);">
+                                    <ul>
+                                        <!--命名+评分-->
+                                        <li style="padding: 5px;display: flex;justify-content: space-between;">
+                                            <span>计算机基础</span>
+                                            <div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller star-grey"></div>
+                                                <div class="star smaller star-grey"></div>
+                                            </div>
+                                        </li>
+                                        <!--学习信息-->
+                                        <li style="margin: 10px 0;padding: 5px;display: flex;justify-content: flex-start;">
+                                            <span style="margin-right: 30px;"><i class="iconfont icon-people"></i>  340 人正在学习</span>
+                                            <span><i class="iconfont icon-manage"></i>  2017-03-12 开课 2学分 16周</span>
+                                        </li>
+                                        <!--按钮-->
+                                        <li style="display: flex;justify-content: flex-end;">
+                                            <div style="margin-right: 10px;display: inline-block;text-decoration: none;cursor: pointer;height: 46px;width: 90px;background-color:white;text-align: center;border: 1px solid cornflowerblue;">
+                                                <a style="line-height: 46px;">浏览课程</a>
+                                            </div>
+                                            <div style="margin-right: 10px;display: inline-block;text-decoration: none;cursor: pointer;height: 46px;width: 90px;background-color:white;text-align: center;border: 1px solid cornflowerblue;">
+                                                <a style="line-height: 46px;">课程管理</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--已归档-->
+                    <div style="display: flex;">
+                        <div style="color:#ccc;margin: 15px 0;display:flex; font-size: 16px;">
+                            <div style='padding: 5px;width: 111px;text-align: center;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;"'>
+                                <span>授课中  1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!--课程列表-->
+                        <div style="margin-bottom: 20px;border-bottom:1px solid #ccc; padding: 10px;">
+                            <div style="display: flex;">
+                                <div style="width: 230px;height: 130px;background-color: cornflowerblue;">
+                                    <img src="">
+                                </div>
+                                <div style="flex-grow: 1;background-color: rgba(195, 188, 188, 0.55);">
+                                    <ul>
+                                        <!--命名+评分-->
+                                        <li style="padding: 5px;display: flex;justify-content: space-between;">
+                                            <span>污水处理工程</span>
+                                            <div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller star-grey"></div>
+                                                <div class="star smaller star-grey"></div>
+                                            </div>
+                                        </li>
+                                        <!--学习信息-->
+                                        <li style="margin: 10px 0;padding: 5px;display: flex;justify-content: flex-start;">
+                                            <span style="margin-right: 30px;"><i class="iconfont icon-people"></i>  340 人正在学习</span>
+                                            <span><i class="iconfont icon-manage"></i>  2017-03-12 开课 2学分 16周</span>
+                                        </li>
+                                        <!--按钮-->
+                                        <li style="display: flex;justify-content: flex-end;">
+                                            <div style="margin-right: 10px;display: inline-block;text-decoration: none;cursor: pointer;height: 46px;width: 90px;background-color:white;text-align: center;border: 1px solid cornflowerblue;">
+                                                <a style="line-height: 46px;">浏览课程</a>
+                                            </div>
+                                            <div style="margin-right: 10px;display: inline-block;text-decoration: none;cursor: pointer;height: 46px;width: 90px;background-color:white;text-align: center;border: 1px solid cornflowerblue;">
+                                                <a style="line-height: 46px;">课程管理</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--课程列表-->
+                        <div style="margin-bottom: 20px;border-bottom:1px solid #ccc; padding: 10px;">
+                            <div style="display: flex;">
+                                <div style="width: 230px;height: 130px;background-color: cornflowerblue;">
+                                    <img src="">
+                                </div>
+                                <div style="flex-grow: 1;background-color: rgba(195, 188, 188, 0.55);">
+                                    <ul>
+                                        <!--命名+评分-->
+                                        <li style="padding: 5px;display: flex;justify-content: space-between;">
+                                            <span>孙子兵法与企业管理</span>
+                                            <div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller"></div>
+                                                <div class="star smaller star-grey"></div>
+                                                <div class="star smaller star-grey"></div>
+                                            </div>
+                                        </li>
+                                        <!--学习信息-->
+                                        <li style="margin: 10px 0;padding: 5px;display: flex;justify-content: flex-start;">
+                                            <span style="margin-right: 30px;"><i class="iconfont icon-people"></i>  340 人正在学习</span>
+                                            <span><i class="iconfont icon-manage"></i>  2017-03-12 开课 2学分 16周</span>
+                                        </li>
+                                        <!--按钮-->
+                                        <li style="display: flex;justify-content: flex-end;">
+                                            <div style="margin-right: 10px;display: inline-block;text-decoration: none;cursor: pointer;height: 46px;width: 90px;background-color:white;text-align: center;border: 1px solid cornflowerblue;">
+                                                <a style="line-height: 46px;">浏览课程</a>
+                                            </div>
+                                            <div style="margin-right: 10px;display: inline-block;text-decoration: none;cursor: pointer;height: 46px;width: 90px;background-color:white;text-align: center;border: 1px solid cornflowerblue;">
+                                                <a style="line-height: 46px;">课程管理</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sidebar-->
+        <div style="position: relative;width: 230px;margin: 33px 0 -270px;">
+            <!--用户信息和头像-->
+            <div style="border: 1px solid #ccc;margin-bottom: 15px;">
+                <ul>
+                    <li style="text-align: center;padding: 5px;">
+                        <img style="border-radius: 75px;" width="75" height="75" src="http://edu-image.nosdn.127.net/FF7A3DDF4DCEE6133AADA1BA2F6DC4D2.png?imageView&thumbnail=75y75&quality=100">
+                    </li>
+                    <li style="text-align: center;padding: 5px;">
+                        <h2>张新海</h2>
+                    </li>
+                    <li style="padding: 5px;">
+                        <label>编辑个性签名</label>
+                        <i style="float: right;font-size: 16px; color: #333;-webkit-transition: font-size 0.25s ease-out 0s; -moz-transition: font-size 0.25s ease-out 0s;transition: font-size 0.25s ease-out 0s;" class="icon iconfont icon-bianji"></i>
+                    </li>
+                </ul>
+            </div>
+            <!--课程公告-->
+            <div style="border: 1px solid #ccc;margin-bottom: 15px;">
+                <!--tittle-->
+                <div style="background-color: rgba(221, 221, 221, 0.27);border-bottom:1px solid #ccc; font-size: 16px;padding: 5px;">
+                    <h2>课程公告</h2>
+                </div>
+                <!--content-->
+                <div>
+                    <p style="cursor: pointer;padding: 5px;"><a>关于作业调查报告最终定稿、鉴定通告</a></p>
+                    <p style="cursor: pointer;padding: 5px;"><a>关于开展信息应用技术培训工作的通知</a></p>
+                    <p style="cursor: pointer;padding: 5px;"><a>关于作业调查报告最终定稿、鉴定通告</a></p>
+                    <p style="cursor: pointer;padding: 5px;"><a>关于开展信息应用技术培训工作的通知</a></p>
+                    <p style="cursor: pointer;padding: 5px;"><a>关于作业调查报告最终定稿、鉴定通告</a></p>
+                </div>
+            </div>
+            <!--师生动态-->
+            <div style="border: 1px solid #ccc;">
+                <!--tittle-->
+                <div style="background-color: rgba(221, 221, 221, 0.27);border-bottom:1px solid #ccc; font-size: 16px;padding: 5px;">
+                    <h2>课程公告</h2>
+                </div>
+                <!--content-->
+                <div>
+                    <ul>
+                        <li style="padding: 5px;">
+                            <div style="display:flex;">
+                                <img style="border-radius: 35px;margin-right: 10px;" width="35" height="35" src="http://edu-image.nosdn.127.net/FF7A3DDF4DCEE6133AADA1BA2F6DC4D2.png?imageView&thumbnail=75y75&quality=100">
+                                <div style="line-height: 35px;"><span>王小军:</span></div>
+                            </div>
+                            <div style="padding: 5px;">
+                                <P>何以解忧，唯有龙虾。问君能有几多愁，恰似虾壳堆满楼。</P>
+                            </div>
+                        </li>
+                        <li style="padding: 5px;">
+                            <div style="display:flex;">
+                                <img style="border-radius: 35px;margin-right: 10px;" width="35" height="35" src="http://edu-image.nosdn.127.net/FF7A3DDF4DCEE6133AADA1BA2F6DC4D2.png?imageView&thumbnail=75y75&quality=100">
+                                <div style="line-height: 35px;"><span>王小军:</span></div>
+                            </div>
+                            <div style="padding: 5px;">
+                                <P>何以解忧，唯有龙虾。问君能有几多愁，恰似虾壳堆满楼。</P>
+                            </div>
+                        </li>
+                        <li style="padding: 5px;">
+                            <div style="display:flex;">
+                                <img style="border-radius: 35px;margin-right: 10px;" width="35" height="35" src="http://edu-image.nosdn.127.net/FF7A3DDF4DCEE6133AADA1BA2F6DC4D2.png?imageView&thumbnail=75y75&quality=100">
+                                <div style="line-height: 35px;"><span>王小军:</span></div>
+                            </div>
+                            <div style="padding: 5px;">
+                                <P>何以解忧，唯有龙虾。问君能有几多愁，恰似虾壳堆满楼。</P>
+                            </div>
+                        </li>
+                        <li style="padding: 5px;">
+                            <div style="display:flex;">
+                                <img style="border-radius: 35px;margin-right: 10px;" width="35" height="35" src="http://edu-image.nosdn.127.net/FF7A3DDF4DCEE6133AADA1BA2F6DC4D2.png?imageView&thumbnail=75y75&quality=100">
+                                <div style="line-height: 35px;"><span>王小军:</span></div>
+                            </div>
+                            <div style="padding: 5px;">
+                                <P>何以解忧，唯有龙虾。问君能有几多愁，恰似虾壳堆满楼。</P>
+                            </div>
+                        </li>
+                        <li style="padding: 5px;">
+                            <div style="display:flex;">
+                                <img style="border-radius: 35px;margin-right: 10px;" width="35" height="35" src="http://edu-image.nosdn.127.net/FF7A3DDF4DCEE6133AADA1BA2F6DC4D2.png?imageView&thumbnail=75y75&quality=100">
+                                <div style="line-height: 35px;"><span>王小军:</span></div>
+                            </div>
+                            <div style="padding: 5px;">
+                                <P>何以解忧，唯有龙虾。问君能有几多愁，恰似虾壳堆满楼。</P>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>

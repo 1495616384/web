@@ -1,17 +1,14 @@
 @charset "UTF-8";
-html {
-    overflow-y: scroll;
-}
-#page-body {
-    margin: 0 10% 0 8.5%;
+#page-body{
+    margin: 0 10% 0 10%;
     /*display: flex;*/
-    padding-top: 70px;
+    /*padding-top: 70px;*/
 }
 
 
 /*五角星*/
 .star-grey,.star-grey:before,.star-grey:after{
-    border-color:#ccc transparent transparent transparent!important;
+    border-color:gray transparent transparent transparent!important;
 }
 .star.smaller {
     border-color: #fd4 transparent transparent transparent;
